@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20150428190932) do
   end
 
   create_table "pratos_restaurantes", id: false, force: :cascade do |t|
-    t.integer "prato_id",      limit: 4
-    t.integer "restaurate_id", limit: 4
+    t.integer "prato_id",       limit: 4
+    t.integer "restaurante_id", limit: 4
   end
 
   create_table "qualificacoes", force: :cascade do |t|
