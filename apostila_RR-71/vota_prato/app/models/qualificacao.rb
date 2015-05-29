@@ -4,7 +4,7 @@ class Qualificacao < ActiveRecord::Base
 
 	validates_numericality_of :nota, greater_than_or_equal_to: 0, less_than_or_equal_to: 10, message: " - deve ser um número entre 0 e 10"
 
-	validates_presence_of :cliente_id, :restautante_id
+	validates_presence_of :cliente_id, :restaurante_id
 	validates_associated :cliente, :restaurante
 
 	belongs_to :cliente
